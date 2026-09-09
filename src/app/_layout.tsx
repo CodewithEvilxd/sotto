@@ -22,6 +22,12 @@ import { StatusBar } from "expo-status-bar";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { useEffect } from "react";
 
+import { useFonts } from "expo-font";
+import { Pacifico_400Regular } from "@expo-google-fonts/pacifico";
+import {
+  ComicRelief_400Regular,
+  ComicRelief_700Bold,
+} from "@expo-google-fonts/comic-relief";
 import { ForegroundFeedbackBanner } from "@/components/settings/ForegroundFeedbackBanner";
 import { FloatingBottomNav } from "@/components/navigation/FloatingBottomNav";
 import { colors, onboardingFonts } from "@/constants/theme";
@@ -33,14 +39,21 @@ import {
 } from "@/features/runtime/app-runtime";
 export default function RootLayout() {
   const runtime = useAppRuntime();
+  const [fontsLoaded, fontError] = useFonts({
+    ComicRelief_400Regular,
+    ComicRelief_700Bold,
+    Pacifico_400Regular,
+  });
+  const fontsReady = fontsLoaded || Boolean(fontError);
+
   return (
     <SafeAreaProvider>
-      {runtime.status === "ready" ? (
+      {runtime.status === "ready" && fontsReady ? (
         <RootNavigator runtime={runtime} />
       ) : (
         <RuntimeBootstrap
           error={runtime.error}
-          loading={runtime.status !== "error"}
+          loading={runtime.status !== "error" || !fontsReady}
         />
       )}
     </SafeAreaProvider>

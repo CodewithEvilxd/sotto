@@ -50,7 +50,8 @@
         {
           "fonts": [
             "node_modules/@expo-google-fonts/comic-relief/400Regular/ComicRelief_400Regular.ttf",
-            "node_modules/@expo-google-fonts/comic-relief/700Bold/ComicRelief_700Bold.ttf"
+            "node_modules/@expo-google-fonts/comic-relief/700Bold/ComicRelief_700Bold.ttf",
+            "node_modules/@expo-google-fonts/pacifico/400Regular/Pacifico_400Regular.ttf"
           ]
         }
       ]

@@ -47,4 +47,9 @@ export const onboardingFonts = {
   bodyMedium: "ComicRelief_400Regular",
   bodySemiBold: "ComicRelief_700Bold",
   bodyBold: "ComicRelief_700Bold",
+  brandCursive: "Pacifico_400Regular",
+} as const;
+
+export const brandFonts = {
+  cursive: "Pacifico_400Regular",
 } as const;
