@@ -35,6 +35,8 @@ import {
 export default function RootLayout() {
   const runtime = useAppRuntime();
   const [fontsLoaded, fontError] = useFonts({
+    ComicRelief_400Regular: require("@expo-google-fonts/comic-relief/400Regular/ComicRelief_400Regular.ttf"),
+    ComicRelief_700Bold: require("@expo-google-fonts/comic-relief/700Bold/ComicRelief_700Bold.ttf"),
     Pacifico_400Regular: require("@expo-google-fonts/pacifico/400Regular/Pacifico_400Regular.ttf"),
   });
   const fontsReady = fontsLoaded || Boolean(fontError);
