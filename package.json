@@ -1,6 +1,7 @@
 {
   "name": "sotto",
   "version": "1.0.0",
+  "description": "Local-first, voice-first intelligence engine for capturing ideas before they disappear.",
   "license": "MIT",
   "author": "Nishant Gaurav <btwitznishantgaurav@gmail.com>",
   "repository": {

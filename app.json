@@ -2,6 +2,7 @@
   "expo": {
     "name": "Sotto",
     "slug": "sotto",
+    "description": "Local-first, voice-first intelligence engine for capturing ideas before they disappear.",
     "version": "1.0.0",
     "platforms": [
       "android"
