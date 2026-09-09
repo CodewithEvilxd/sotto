@@ -10,7 +10,6 @@
     "icon": "./src/assets/app-icon.png",
     "scheme": "sotto",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "android": {
       "permissions": [
         "android.permission.RECORD_AUDIO",
@@ -21,7 +20,6 @@
         "foregroundImage": "./src/assets/brand-mark.png"
       },
       "softwareKeyboardLayoutMode": "resize",
-      "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
       "package": "com.codewithevilxd.sotto"
     },
