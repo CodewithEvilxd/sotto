@@ -45,3 +45,9 @@ app-example
 # generated native folders
 /ios
 /android
+
+# internal instructions and local configs
+AGENTS.md
+CLAUDE.md
+.claude/
+docs/

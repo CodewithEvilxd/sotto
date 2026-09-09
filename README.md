@@ -200,10 +200,6 @@ bunx expo export --platform android
 ```text
 sotto/
 ├── .github/              # CI/CD Workflows (Android APK release and build pipelines)
-├── docs/                 # Product Specifications & Design Guidelines
-│   ├── ARCHITECTURE.md   # Architectural boundaries, state machines, and data flow
-│   ├── Design.md         # Visual design system (Tokens, palette, typography, rules)
-│   └── CONVENTIONS.md    # Code quality, JSDoc headers, and testing rules
 ├── scripts/              # Repository maintenance tooling
 │   └── audit-jsdoc.js    # Enforces JSDoc author and license tagging
 ├── src/
@@ -253,7 +249,7 @@ git push origin v1.0.0
 
 ## 📜 Developer Conventions
 
-All contributions adhere to the strict guidelines in [docs/CONVENTIONS.md](docs/CONVENTIONS.md):
+All contributions adhere to strict development guidelines:
 
 - **Package Management**: Exclusively use `bun add` (never `npm`, `yarn`, or `npx`).
 - **Icons**: Exclusively use Phosphor Icons (`phosphor-react-native`).
